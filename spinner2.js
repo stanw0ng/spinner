@@ -1,4 +1,4 @@
-const spinChars = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|', '\n'];
+const spinChars = ['|', '/', '-', '\\', '|', '/', '-', '\\','|'];
 let delay = 100;
 for (const char of spinChars) {
   setTimeout(() => {
@@ -6,3 +6,6 @@ for (const char of spinChars) {
   }, delay);
   delay += 200;
 }
+setTimeout(() => {
+  process.stdout.write('\n');
+}, delay);
